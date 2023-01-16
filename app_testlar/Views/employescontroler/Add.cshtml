@@ -1,0 +1,26 @@
+﻿@model app_testlar.Models.addemployeviewmodel
+@{
+}
+<br />
+<br />
+<br />
+<br />
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">NAMA</label>
+        <input type="text" class= "form-control" asp-for="Name">
+    </div>
+       <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">NO HP</label>
+        <input type="text" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">PESANAN</label>
+        <input type="text" class="form-control" asp-for="Salary">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">NO MEJA</label>
+        <input type="text" class="form-control" asp-for="Total">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,32 @@
+﻿@model app_testlar.Models.UpdateEmployeViewModel
+@{
+}
+<br />
+<br />
+<br />
+<br />
+<h1>Edit Employee</h1> 
+<form method="post" action="View">
+    <div class="mb-3">
+        <label for="" class="form-label">id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">email</label>
+        <input type="text" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">name</label>
+        <input type="text" class="form-control" asp-for="Salary">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">name</label>
+        <input type="text" class="form-control" asp-for="Total">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" asp-action="Delete" asp-controller="employescontroler">delete</button>
+</form>

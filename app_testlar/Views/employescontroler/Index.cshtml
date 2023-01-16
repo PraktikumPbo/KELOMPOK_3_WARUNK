@@ -1,0 +1,30 @@
+﻿@model List<app_testlar.Models.Domain.employe>
+@{
+}
+<br />
+<br />
+<br />
+<br />
+<h1>DATA</h1>
+<table class="table">
+<thead>
+    <tr>
+            <th>NAMA</th>
+            <th>NO HP</th>
+            <th>PESANAN</th>
+            <th>NO MEJA</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach(var employee in Model)
+    {
+        <tr>
+                <td>@employee.Name</td>
+                <td>@employee.Email</td>
+                <td>@employee.Salary</td>
+                <td>@employee.Total</td>
+
+        </tr>
+    }
+</tbody>
+</table>
